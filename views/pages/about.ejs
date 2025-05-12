@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+<main>
+    <section class="about-hero">
+        <h1>About Us</h1>
+        <p>Learn more about the Sunshine Runners Club and our passionate team!</p>
+    </section>
+
+    <section class="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <% groupMembers.forEach(member => { %>
+                <div class="team-card">
+                    <h3><%= member.obj1 %></h3>
+                    <p><%= member.obj2 %></p>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>We aim to inspire and support runners across Florida, fostering a community that thrives on health, inclusivity, and the joy of running.</p>
+    </section>
+</main>
+
+<%- include('../partials/footer') %>

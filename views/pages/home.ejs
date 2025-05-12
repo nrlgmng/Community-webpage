@@ -1,0 +1,50 @@
+<%- include('../partials/header') %>
+
+<main>
+    <section class="hero">
+        <h1>Welcome to Sunshine Runners Club</h1>
+        <p>Run with us in the heart of Florida, where sunshine and community fuel every step!</p>
+        <a href="/contact" class="cta-button">Join Our Community</a>
+    </section>
+
+    <section class="intro">
+        <h2>Why Run With Us?</h2>
+        <p>Our club is all about fitness, fun, and friendship. Whether you're training for a marathon or just starting out, we offer group runs, expert tips for Florida's weather, and a welcoming community. Join us for scenic runs along beaches, trails, and city paths!</p>
+    </section>
+
+    <section class="community-info">
+        <h2>About Our Club</h2>
+        <p>The Sunshine Runners Club is dedicated to runners of all levels, from beginners to marathon veterans. Based in Florida, we run year-round, adapting to the tropical weather with early morning and evening sessions to beat the heat. Our club fosters a supportive environment, hosting weekly runs, social events, and charity races.</p>
+    </section>
+
+    <section class="weather-tips">
+        <h2>Running in Florida's Weather</h2>
+        <ul>
+            <% weatherTips.forEach(tip => { %>
+                <li><strong><%= tip.title %>:</strong> <%= tip.description %></li>
+            <% }) %>
+        </ul>
+    </section>
+
+    <section class="upcoming-runs">
+        <h2>Upcoming Group Runs</h2>
+        <div class="runs-grid">
+            <% groupRuns.forEach(run => { %>
+                <div class="run-card">
+                    <h3><%= run.name %></h3>
+                    <p><strong>Date:</strong> <%= run.date %></p>
+                    <p><strong>Location:</strong> <%= run.location %></p>
+                    <p><strong>Distance:</strong> <%= run.distance %></p>
+                    <p><%= run.description %></p>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+
+    <section class="join-us">
+        <h2>Join the Club</h2>
+        <p>Ready to run with us? Contact us via our <a href="/contact">Contact Page</a> to learn about membership and upcoming events!</p>
+    </section>
+</main>
+
+<%- include('../partials/footer') %>

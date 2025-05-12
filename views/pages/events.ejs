@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<main>
+    <section class="events-hero">
+        <h1>Upcoming Events</h1>
+        <p>Check out our exciting races and social gatherings!</p>
+    </section>
+
+    <section class="events-list">
+        <h2>Event Schedule</h2>
+        <div class="events-grid">
+            <% events.forEach(event => { %>
+                <div class="event-card">
+                    <h3><%= event.obj1 %></h3>
+                    <p><%= event.obj2 %></p>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer') %>
