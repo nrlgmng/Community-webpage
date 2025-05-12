@@ -7,8 +7,8 @@ let contactSubmissions = [];
 // Data for about page (team members, placeholder)
 const groupMembers = [
     { obj1: "Hannes Smit", obj2: "President" },
-    { obj1: "Ugochukwu Winner Ogbonnaya", obj2: "Vice President" },
-    { obj1: "Ashton Damons", obj2: "Event Coordinator" },
+    { obj1: "Ashton Damons", obj2: "Vice President" },
+    { obj1: "Ugochukwu Winner Ogbonnaya", obj2: "Event Coordinator" },
     { obj1: "Kaelo Molebatsi", obj2: "Community Manager" },
 ];
 
