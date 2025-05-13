@@ -1,8 +1,10 @@
+require("dotenv").config();
+
 const express = require("express");
 const path = require("path");
 const pageRoutes = require("./routes/pageRoutes.js");
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 80;
 
 // Middleware
 app.use(express.static(path.join(__dirname, "public"))); // Serve static files (e.g., styles.css)
@@ -19,7 +21,7 @@ app.use("/", pageRoutes);
 // Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).send("Something went wong!");
+    res.status(500).send("Something went vewy wong!");
 });
 
 // Start server
