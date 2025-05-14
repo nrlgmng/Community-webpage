@@ -3,16 +3,19 @@
 <main>
     <section class="events-hero">
         <h1>Upcoming Events</h1>
-        <p>Check out our exciting races and social gatherings!</p>
+        <p>Join us for exciting running events across Florida! From charity runs to social gatherings, there’s something for everyone.</p>
     </section>
 
-    <section class="events-list">
+    <section class="events">
         <h2>Event Schedule</h2>
         <div class="events-grid">
             <% events.forEach(event => { %>
                 <div class="event-card">
-                    <h3><%= event.obj1 %></h3>
-                    <p><%= event.obj2 %></p>
+                    <img src="<%= event.image %>" alt="<%= event.obj1 %>" class="event-image">
+                    <div class="event-content">
+                        <h3><%= event.obj1 %></h3>
+                        <p><%= event.obj2 %></p>
+                    </div>
                 </div>
             <% }) %>
         </div>

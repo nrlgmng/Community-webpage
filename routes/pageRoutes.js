@@ -8,24 +8,39 @@ let contactSubmissions = [];
 const groupMembers = [
     { obj1: "Hannes Smit", obj2: "President" },
     { obj1: "Ashton Damons", obj2: "Vice President" },
-    { obj1: "Ugochukwu Winner Ogbonnaya", obj2: "Event Coordinator" },
     { obj1: "Kaelo Molebatsi", obj2: "Community Manager" },
 ];
 
 // Data for events page (events, placeholder)
 const events = [
-    { obj1: "Annual Charity 5K", obj2: "July 10, 2025 - Miami" },
-    { obj1: "Beach Run Social", obj2: "August 5, 2025 - Fort Lauderdale" },
-    { obj1: "Marathon Training Kickoff", obj2: "September 1, 2025 - Orlando" },
-    { obj1: "Holiday Fun Run", obj2: "December 15, 2025 - Tampa" },
+    { obj1: "Annual Charity 5K", obj2: "July 10, 2025 - Miami", image: "/pexels-liza-summer-6348129.jpg" },
+    { obj1: "Beach Run Social", obj2: "August 5, 2025 - Fort Lauderdale", image: "/pexels-luhras-2630604.jpg" },
+    { obj1: "Marathon Training Kickoff", obj2: "September 1, 2025 - Orlando", image: "/pexels-runffwpu-2654902.jpg" },
+    { obj1: "Holiday Fun Run", obj2: "December 15, 2025 - Tampa", image: "/pexels-ron-lach-10484489.jpg" },
 ];
 
 // Data for home page (merged with community)
 const weatherTips = [
-    { title: "Stay Hydrated", description: "Florida's heat can be intense. Always carry water and consider electrolyte drinks for longer runs." },
-    { title: "Run Early or Late", description: "Avoid midday heat by scheduling runs before 8 AM or after 6 PM." },
-    { title: "Wear Lightweight Gear", description: "Choose breathable, moisture-wicking clothing to stay cool and comfortable." },
-    { title: "Check Rain Forecasts", description: "Sudden showers are common. Plan routes with shelter options during rainy seasons." }
+    { 
+        title: "Stay Hydrated", 
+        description: "Florida's heat can be intense. Always carry water and consider electrolyte drinks for longer runs.",
+        image: "/pexels-mart-production-7880256.jpg"
+    },
+    { 
+        title: "Run Early or Late", 
+        description: "Avoid midday heat by scheduling runs before 8 AM or after 6 PM.",
+        image: "/pexels-enric-cruz-lopez-6039243.jpg"
+    },
+    { 
+        title: "Wear Lightweight Gear", 
+        description: "Choose breathable, moisture-wicking clothing to stay cool and comfortable.",
+        image: "/pexels-mart-production-8032758.jpg"
+    },
+    { 
+        title: "Check Rain Forecasts", 
+        description: "Sudden showers are common. Plan routes with shelter options during rainy seasons.",
+        image: "/pexels-pixabay-268941.jpg"
+    }
 ];
 
 const groupRuns = [
@@ -51,10 +66,14 @@ router.get("/events", (req, res) => {
 
 // GET: Contact Us page
 router.get("/contact", (req, res) => {
-    res.render("pages/contact", { title: "Contact Us"});
+    res.render("pages/contact", { title: "Contact Us", error: null });
 });
 
 // POST: Handle Contact form submission
+router.get("/thankyou", (req, res) => {
+    res.render("pages/thankyou", { title: "Thank You" });
+});
+
 router.post("/contact", (req, res) => {
     const { name, surname, email, message } = req.body;
 
@@ -80,11 +99,6 @@ router.post("/contact", (req, res) => {
 
     // Redirect to Thank You page
     res.redirect("/thankyou");
-});
-
-// GET: Thank You page
-router.get("/thankyou", (req, res) => {
-    res.render("pages/thankyou", { title: "Thank You" });
 });
 
 module.exports = router;
