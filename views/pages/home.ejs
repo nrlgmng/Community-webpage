@@ -9,6 +9,7 @@
 
     <section class="intro">
         <h2>Why Run With Us?</h2>
+        <img src="/pexels-jangogh-418924060-15086602.jpg" alt="Runners enjoying a group run" class="intro-image">
         <p>Our club is all about fitness, fun, and friendship. Whether you're training for a marathon or just starting out, we offer group runs, expert tips for Florida's weather, and a welcoming community. Join us for scenic runs along beaches, trails, and city paths!</p>
     </section>
 
@@ -19,26 +20,34 @@
 
     <section class="weather-tips">
         <h2>Running in Florida's Weather</h2>
-        <ul>
-            <% weatherTips.forEach(tip => { %>
-                <li><strong><%= tip.title %>:</strong> <%= tip.description %></li>
-            <% }) %>
-        </ul>
+        <% if (weatherTips && Array.isArray(weatherTips)) { %>
+            <ul>
+                <% weatherTips.forEach(tip => { %>
+                    <li><strong><%= tip.title || 'Untitled Tip' %>:</strong> <%= tip.description || 'No description available.' %></li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p>No weather tips available at the moment.</p>
+        <% } %>
     </section>
 
     <section class="upcoming-runs">
         <h2>Upcoming Group Runs</h2>
-        <div class="runs-grid">
-            <% groupRuns.forEach(run => { %>
-                <div class="run-card">
-                    <h3><%= run.name %></h3>
-                    <p><strong>Date:</strong> <%= run.date %></p>
-                    <p><strong>Location:</strong> <%= run.location %></p>
-                    <p><strong>Distance:</strong> <%= run.distance %></p>
-                    <p><%= run.description %></p>
-                </div>
-            <% }) %>
-        </div>
+        <% if (groupRuns && Array.isArray(groupRuns)) { %>
+            <div class="runs-grid">
+                <% groupRuns.forEach(run => { %>
+                    <div class="run-card">
+                        <h3><%= run.name || 'Untitled Run' %></h3>
+                        <p><strong>Date:</strong> <%= run.date || 'TBD' %></p>
+                        <p><strong>Location:</strong> <%= run.location || 'TBD' %></p>
+                        <p><strong>Distance:</strong> <%= run.distance || 'TBD' %></p>
+                        <p><%= run.description || 'No description available.' %></p>
+                    </div>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p>No upcoming runs scheduled.</p>
+        <% } %>
     </section>
 
     <section class="join-us">

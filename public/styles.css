@@ -1,102 +1,562 @@
-/* General */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.site-header {
-    background-color: #007bff;
+/* Body Background with Gradient */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #fff;
-    padding: 1rem;
+    line-height: 1.8;
+    padding: 2rem;
+    font-size: 1.2rem;
 }
 
-.header-content {
+/* Container Styling */
+.container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    padding: 3rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.main-nav ul {
-    list-style: none;
+header h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 2rem;
+}
+
+/* Navigation */
+nav.main-nav {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav.main-nav ul {
     display: flex;
-    gap: 1rem;
+    list-style: none;
+    gap: 1.5rem;
 }
 
-.main-nav a {
-    color: #fff;
+nav.main-nav li {
+    display: inline-block;
+}
+
+nav.main-nav a {
+    color: #000;
     text-decoration: none;
+    padding: 8px 15px;
+    background: linear-gradient(to right, #43e97b, #38f9d7);
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    display: block;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
-.site-footer {
-    background-color: #333;
-    color: #fff;
+nav.main-nav a:hover {
+    background: linear-gradient(to right, #38f9d7, #43e97b);
+    transform: scale(1.05);
+}
+
+/* Buttons */
+button, .btn, a:not(.main-nav a) {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #43e97b, #38f9d7);
+    color: #000;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover, a:not(.main-nav a):hover {
+    background: linear-gradient(to right, #38f9d7, #43e97b);
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
-    padding: 1rem;
+    padding: 5rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+/* About Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 5rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+}
+
+.about-hero p {
+    font-size: 1.4rem;
+}
+
+.about-hero-image {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.intro h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-header {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.4rem;
+    transition: background 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.error-message {
+    color: #ff6a00;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Thank You Page */
+.thankyou-hero {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+
+.thankyou-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.thankyou-hero p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+/* Weather Tips */
+.weather-tips {
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+
+.weather-tips h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.weather-tips ul {
+    list-style: none;
+}
+
+.weather-tips li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Events */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-top: 2rem;
 }
 
-.footer-content a {
-    color: #007bff;
-}
-
-/* Page-specific */
-.hero, .community-hero, .about-hero, .events-hero, .contact-hero, .thankyou-hero {
-    text-align: center;
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
-    background-color: #f4f4f4;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
 }
 
-.cta-button, .submit-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.event-card:hover {
+    transform: scale(1.03);
+}
+
+.event-image {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+
+.event-content {
+    text-align: center;
+}
+
+.event-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.event-content p {
+    font-size: 1.3rem;
+}
+
+/* Upcoming Runs */
+.upcoming-runs {
+    background-image: url('/pexels-runffwpu-2530130.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+
+.upcoming-runs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.upcoming-runs h2,
+.upcoming-runs .runs-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.runs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.run-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.run-card:hover {
+    transform: scale(1.03);
+}
+
+.run-card h3 {
+    font-size: 1.8rem;
+}
+
+.run-card p {
+    font-size: 1.3rem;
+}
+
+/* Sections */
+section {
+    margin: 3rem 0;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
 }
 
 .team-grid, .events-grid, .runs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .team-card, .event-card, .run-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 1rem;
+.team-card:hover, .event-card:hover, .run-card:hover {
+    transform: scale(1.03);
 }
 
-.form-group {
-    margin-bottom: 1rem;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem;
+    margin-top: 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    font-size: 1.4rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #000000;
-    border-radius: 5px;
-}
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
 
-.error-message {
-    color: red;
-    margin-bottom: 1rem;
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+
+    nav.main-nav {
+        position: static;
+        transform: none;
+        margin-top: 1.5rem;
+    }
+
+    nav.main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    nav.main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.main-nav a {
+        padding: 6px 12px;
+        font-size: 1.1em;
+    }
+
+    .submission-form {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .form-header {
+        font-size: 2rem;
+    }
+
+    .form-group label {
+        font-size: 1.3rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .thankyou-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .weather-tips, .events-grid, .runs-grid, .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .weather-tips ul {
+        padding: 0;
+    }
+
+    .weather-tips li {
+        font-size: 1.1rem;
+    }
+
+    .event-image {
+        max-width: 250px;
+    }
+
+    .event-content h3, .run-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .event-content p, .run-card p {
+        font-size: 1.1rem;
+    }
+
+    .upcoming-runs {
+        padding: 3rem 2rem;
+    }
+
+    .intro-image, .about-hero-image {
+        max-width: 90%;
+    }
+
+    .intro {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .about-hero {
+        padding: 3rem 2rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 3rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p, button, .btn, a:not(.main-nav a) {
+        font-size: 1.1em;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
 }
