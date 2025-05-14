@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Body Background with Gradient */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +18,11 @@ body {
     padding: 2rem;
     font-size: 1.2rem;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Container Styling */
 .container {
     max-width: 1200px;
@@ -24,7 +32,11 @@ body {
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Header Styling */
 header {
     position: relative;
@@ -33,7 +45,11 @@ header {
     align-items: center;
     width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 header h1 {
     font-size: 3.5rem;
     background: linear-gradient(to right, #ff6a00, #ee0979);
@@ -42,7 +58,11 @@ header h1 {
     -webkit-text-fill-color: transparent;
     margin-left: 2rem;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Navigation */
 nav.main-nav {
     position: absolute;
@@ -50,17 +70,29 @@ nav.main-nav {
     top: 50%;
     transform: translateY(-50%);
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 nav.main-nav ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
+<<<<<<< HEAD
 
 nav.main-nav li {
     display: inline-block;
 }
 
+=======
+ 
+nav.main-nav li {
+    display: inline-block;
+}
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 nav.main-nav a {
     color: #000;
     text-decoration: none;
@@ -73,12 +105,20 @@ nav.main-nav a {
     letter-spacing: 1px;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 nav.main-nav a:hover {
     background: linear-gradient(to right, #38f9d7, #43e97b);
     transform: scale(1.05);
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Buttons */
 button, .btn, a:not(.main-nav a) {
     padding: 10px 20px;
@@ -94,12 +134,20 @@ button, .btn, a:not(.main-nav a) {
     font-size: 1.2em;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 button:hover, .btn:hover, a:not(.main-nav a):hover {
     background: linear-gradient(to right, #38f9d7, #43e97b);
     transform: scale(1.1);
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Hero Section */
 .hero {
     text-align: center;
@@ -111,6 +159,7 @@ button:hover, .btn:hover, a:not(.main-nav a):hover {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+<<<<<<< HEAD
 }
 
 .hero h1 {
@@ -394,26 +443,328 @@ section {
     padding: 3rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
+=======
 }
-
-.team-grid, .events-grid, .runs-grid {
+ 
+.hero h1 {
+    font-size: 3.5rem;
+}
+ 
+.hero p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+ 
+/* About Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 5rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+ 
+.about-hero h1 {
+    font-size: 3.5rem;
+}
+ 
+.about-hero p {
+    font-size: 1.4rem;
+}
+ 
+.about-hero-image {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+ 
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+ 
+.intro h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+ 
+.intro-image {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+ 
+.intro p {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+ 
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+ 
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 100%;
+}
+ 
+.form-header {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+ 
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.form-group label {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+ 
+.form-group input,
+.form-group textarea {
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.4rem;
+    transition: background 0.3s ease;
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
+}
+ 
+.form-group input:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+ 
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+ 
+.error-message {
+    color: #ff6a00;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+ 
+/* Thank You Page */
+.thankyou-hero {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+ 
+.thankyou-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+ 
+.thankyou-hero p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+ 
+/* Weather Tips */
+.weather-tips {
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+ 
+.weather-tips h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+ 
+.weather-tips ul {
+    list-style: none;
+}
+ 
+.weather-tips li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+ 
+/* Events */
+.events-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .team-card, .event-card, .run-card {
+=======
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+ 
+.event-card {
+    display: flex;
+    flex-direction: column;
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 1rem;
     transition: transform 0.3s ease;
 }
+<<<<<<< HEAD
 
 .team-card:hover, .event-card:hover, .run-card:hover {
     transform: scale(1.03);
 }
 
+=======
+ 
+.event-card:hover {
+    transform: scale(1.03);
+}
+ 
+.event-image {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+ 
+.event-content {
+    text-align: center;
+}
+ 
+.event-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+ 
+.event-content p {
+    font-size: 1.3rem;
+}
+ 
+/* Upcoming Runs */
+.upcoming-runs {
+    background-image: url('/pexels-runffwpu-2530130.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+ 
+.upcoming-runs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+ 
+.upcoming-runs h2,
+.upcoming-runs .runs-grid {
+    position: relative;
+    z-index: 1;
+}
+ 
+.runs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+ 
+.run-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+ 
+.run-card:hover {
+    transform: scale(1.03);
+}
+ 
+.run-card h3 {
+    font-size: 1.8rem;
+}
+ 
+.run-card p {
+    font-size: 1.3rem;
+}
+ 
+/* Sections */
+section {
+    margin: 3rem 0;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+ 
+.team-grid, .events-grid, .runs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+ 
+.team-card, .event-card, .run-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+ 
+.team-card:hover, .event-card:hover, .run-card:hover {
+    transform: scale(1.03);
+}
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Footer */
 footer {
     text-align: center;
@@ -423,51 +774,84 @@ footer {
     border-radius: 1rem;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
         font-size: 1rem;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     header {
         flex-direction: column;
         text-align: center;
         padding: 2rem;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     header h1 {
         font-size: 2.5rem;
         margin-bottom: 2rem;
         margin-left: 0;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     nav.main-nav {
         position: static;
         transform: none;
         margin-top: 1.5rem;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     nav.main-nav ul {
         flex-direction: column;
         align-items: center;
         gap: 1.2rem;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     nav.main-nav li {
         width: 100%;
         text-align: center;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     nav.main-nav a {
         padding: 6px 12px;
         font-size: 1.1em;
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     .submission-form {
         padding: 2rem;
         max-width: 100%;
     }
+<<<<<<< HEAD
 
     .form-header {
         font-size: 2rem;
@@ -477,11 +861,23 @@ footer {
         font-size: 1.3rem;
     }
 
+=======
+ 
+    .form-header {
+        font-size: 2rem;
+    }
+ 
+    .form-group label {
+        font-size: 1.3rem;
+    }
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     .form-group input,
     .form-group textarea {
         font-size: 1.2rem;
         padding: 1rem;
     }
+<<<<<<< HEAD
 
     .thankyou-hero h1 {
         font-size: 2.5rem;
@@ -519,10 +915,50 @@ footer {
         max-width: 90%;
     }
 
+=======
+ 
+    .thankyou-hero h1 {
+        font-size: 2.5rem;
+    }
+ 
+    .weather-tips, .events-grid, .runs-grid, .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+ 
+    .weather-tips ul {
+        padding: 0;
+    }
+ 
+    .weather-tips li {
+        font-size: 1.1rem;
+    }
+ 
+    .event-image {
+        max-width: 250px;
+    }
+ 
+    .event-content h3, .run-card h3 {
+        font-size: 1.5rem;
+    }
+ 
+    .event-content p, .run-card p {
+        font-size: 1.1rem;
+    }
+ 
+    .upcoming-runs {
+        padding: 3rem 2rem;
+    }
+ 
+    .intro-image, .about-hero-image {
+        max-width: 90%;
+    }
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
     .intro {
         padding: 1.5rem;
         gap: 1rem;
     }
+<<<<<<< HEAD
 
     .intro h2 {
         font-size: 2rem;
@@ -560,3 +996,43 @@ footer {
         font-size: 1.2rem;
     }
 }
+=======
+ 
+    .intro h2 {
+        font-size: 2rem;
+    }
+ 
+    .intro p {
+        font-size: 1.1rem;
+    }
+ 
+    .about-hero {
+        padding: 3rem 2rem;
+    }
+ 
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+ 
+    .about-hero p {
+        font-size: 1.2rem;
+    }
+ 
+    .hero {
+        padding: 3rem 2rem;
+    }
+ 
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+ 
+    .hero p, button, .btn, a:not(.main-nav a) {
+        font-size: 1.1em;
+    }
+ 
+    footer {
+        font-size: 1.2rem;
+    }
+}
+ 
+>>>>>>> 3de4ac92b63df23fec718ceaf1252ead90fc0a57
