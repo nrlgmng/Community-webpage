@@ -3,18 +3,22 @@
 /* General Reset */
 * {
     margin: 0;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.site-header {
-    background-color: #007bff;
+/* Body Background with Gradient */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #fff;
     line-height: 1.8;
     padding: 2rem;
     font-size: 1.2rem;
 }
 
-.header-content {
+/* Container Styling */
+.container {
     max-width: 1200px;
     margin: auto;
     background: rgba(255, 255, 255, 0.05);
@@ -162,33 +166,34 @@ button:hover, .btn:hover, a:not(.main-nav a):hover {
 
 /* Intro Section */
 .intro {
-    text-align: left; /* Align text left */
+    text-align: center;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     margin: 3rem 0;
     display: flex;
-    flex-direction: row; /* Side-by-side layout */
-    align-items: flex-start; /* Align top */
-    gap: 2rem; /* Space between image and text */
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.intro h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
 }
 
 .intro-image {
-    max-width: 50%; /* Image takes left half */
+    width: 600px;
+    max-width: 80%;
     height: auto;
     object-fit: cover;
     border-radius: 0.5rem;
     margin: 0;
 }
 
-.intro h2 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem; /* Adjusted for spacing */
-}
-
 .intro p {
     font-size: 1.3rem;
-    margin: 0; /* Remove default margin */
+    margin-top: 0;
 }
 
 /* Contact Form */
@@ -280,7 +285,7 @@ button:hover, .btn:hover, a:not(.main-nav a):hover {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     margin: 3rem 0;
-    text-align: center; /* Centered text */
+    text-align: center; /* Added to center text */
 }
 
 .weather-tips h2 {
@@ -475,20 +480,6 @@ footer {
     .header-logo {
         position: static; /* Stack logo in column */
         margin: 1rem auto; /* Center logo */
-    }
-
-    .intro {
-        flex-direction: column; /* Stack image above text */
-        align-items: center; /* Center content */
-        text-align: center; /* Center text */
-    }
-
-    .intro-image {
-        max-width: 90%; /* Full width on mobile */
-    }
-
-    .intro h2, .intro p {
-        margin: 0.5rem 0; /* Reset margins */
     }
 
     .submission-form {
