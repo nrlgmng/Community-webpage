@@ -7,7 +7,6 @@ Dependencies: express
 Team Members and Roles:
 Hannes – Team Lead, Backend Developer, Frontend Developer, Data Manager, Documentation Manager
 Ashton Damons – Frontend Developer
-Ugochukwu Winner Ogbonnaya – Backend Developer
 Kaelo Molebatsi – Data Manager
 
 Folder Structure:
@@ -52,7 +51,7 @@ Place styles.css in public/.
 
 Run the Server:
 npm run dev
-The server runs on http://localhost:3001
+The server runs on http://localhost:80
 
 Usage:
 Access Pages:
